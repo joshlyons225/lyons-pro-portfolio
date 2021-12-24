@@ -121,11 +121,54 @@ footer {
   line-height: 1.3;
   margin-bottom: 15px ;
 }
-
-
 /* ABOUT ME STYLES END */
 
 /* WORK SAMPLES STYLES START */
+.work {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-img {
+  margin: 20px;
+  flex: 1;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.work-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+
+.work-info p {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.run-buddy {
+  margin: 20px;
+  flex: 1;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.run-buddy img {
+  width: 75%;
+  float: left;
+}
+
+.run-buddy ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
 
 /* WORK SAMPLES STYLES END */
 
