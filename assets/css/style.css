@@ -95,11 +95,23 @@ footer {
 /* FOOTER STYLES END */
 
 /* ABOUT ME STYLES START */
+.about {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about img {
+  width: 100%;
+}
+
 .about-cta {
   width: 35%;
-  text-align: left;
+  text-align: right;
   margin: 3.5%;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-size: 18px;
   line-height: 1.2;
 }
@@ -111,21 +123,11 @@ footer {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-img {
-  background-size: cover;
-  display: flex;
-  justify-content: right;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 100%;
-}
-
 /* ABOUT ME STYLES END */
 
 /* WORK SAMPLES STYLES START */
 
-/* WORD SAMPLES STYLES END */
+/* WORK SAMPLES STYLES END */
 
 /* CONTACT STYLES START */
 
