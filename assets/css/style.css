@@ -13,6 +13,7 @@
 body {
     color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url(../images/lion\ matrix-bg.jpg);
 }
 
 /* HEADER & NAV BAR STYLES START */
@@ -80,6 +81,8 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    background-image: url(../images/lion\ matrix-bg.jpg);
+    background-size: cover;
   }
   
   footer h2 {
@@ -90,12 +93,18 @@ footer {
   
   footer div {
     line-height: 1.5;
+    color: var(--tertiary-color);
     text-align: right;
   }
 /* FOOTER STYLES END */
 
-/* ABOUT ME STYLES START */
-.about {
+/* SECTION STYLES */
+section {
+  padding: 10px;
+}
+
+/* FLEX STYLES */
+.flex-style {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -103,11 +112,12 @@ footer {
   justify-content: space-around;
 }
 
+/* ABOUT ME STYLES START */
 .about-img {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .about-img img {
@@ -124,19 +134,11 @@ footer {
 /* ABOUT ME STYLES END */
 
 /* WORK SAMPLES STYLES START */
-.work {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .work-img {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .work-info {
@@ -147,7 +149,7 @@ footer {
 
 .work-info p {
   font-size: 18px;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .run-buddy {
@@ -169,26 +171,82 @@ footer {
   align-items: center;
   list-style: none;
 }
-
 /* WORK SAMPLES STYLES END */
 
 /* CONTACT STYLES START */
+.contact-img {
+  margin: 20px;
+  flex: 1;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.contact-info {
+  font-size: 20px;
+  padding: 25px;
+  line-height: 1.3;
+  margin-bottom: 15px ;
+}
+
 
 /*CONTACT STYLES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
 
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .work-img {
+    flex: 0 70%;
+  }
 }
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
+  section {
+    padding: 30px 15px;
+  }
+  .work-info {
+    display: block;
+  }
 }
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  .work-img, .about-img {
+    flex: 0 100%;
+  }
 
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
 }
