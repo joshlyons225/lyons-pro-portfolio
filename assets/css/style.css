@@ -103,6 +103,12 @@ section {
   padding: 10px;
 }
 
+section h2 {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* FLEX STYLES */
 .flex-style {
   width: 100%;
